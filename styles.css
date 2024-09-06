@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product-list,
+.cart,
+.table-selection {
+  margin: 20px;
+}
+
+#checkout-message {
+  color: green;
+  font-weight: bold;
+}
