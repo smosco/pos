@@ -26,7 +26,7 @@ document.querySelectorAll('.add-product-button').forEach((button) => {
 export function addEventListenersToCart() {
   document.querySelectorAll('.decrease-btn').forEach((button) => {
     button.addEventListener('click', (e) => {
-      const product = e.target.getAttribute('data-product');
+      const product = e.target.dataset.product;
       updateQuantity(product, -1);
       updateDOM();
     });
@@ -34,7 +34,7 @@ export function addEventListenersToCart() {
 
   document.querySelectorAll('.increase-btn').forEach((button) => {
     button.addEventListener('click', (e) => {
-      const product = e.target.getAttribute('data-product');
+      const product = e.target.dataset.product;
       updateQuantity(product, 1);
       updateDOM();
     });

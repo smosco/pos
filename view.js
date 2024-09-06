@@ -13,9 +13,9 @@ export function updateDOM() {
     const listItem = document.createElement('li');
     listItem.innerHTML = `
         ${product} - ${item.price}원
-        <button class="decrease-btn">-</button>
+        <button class="decrease-btn" data-product="${product}">-</button>
         ${item.qty}
-        <button class="increase-btn">+</button>
+        <button class="increase-btn" data-product="${product}">+</button>
       `;
     cartList.appendChild(listItem);
   }
